@@ -1,3 +1,12 @@
+"""
+The following functionalities are present:
+- Self-learning Tic-Tac-Toe Bot
+- Saves any previously learning
+- Option to reset learning
+- Fully playable, Any person can play the Bot. 
+- Ability to Learn while playing
+"""
+
 import pickle
 import random
 import math
