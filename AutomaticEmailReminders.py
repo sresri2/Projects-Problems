@@ -1,3 +1,19 @@
+'''
+The following functionalities are included:
+ - Automatic Email Reminders One Day Prior 
+ - Fully automated time tracker and reminders on time
+ - Automatic Email Send Time Variations; Reduces Chance of email going to Spam.
+ - Intended Usage: Mass Reminder Emails to Participants or Event attendees. 
+
+The following must be created for each event:
+ - Event ID: String without Spaces to Identify Event
+ - Event Name: Can Include Spaces - How the Event is referred to in the Email. 
+ - Recipients File: File for each event containing each recipient's email on a separate line. Must end in .txt
+ - Message File: File for each event containing the message to be sent by email to the recipients. Must end in .txt
+ - Add each of the above to the dictionaries so that the functionalities can work accordingly and automatically. 
+
+'''
+
 def varyTime():
     #Vary Email Send Time; Reduces Chances of Email Going to Spam
     import random
@@ -12,7 +28,7 @@ import random
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-mail_content = "Hello everyone,\n Reminder that the ***INSERT EVENT NAME*** event is in 30 minutes at ***INSERT EVENT TIME***!\n Please try to join.\n Thank you!"
+mail_content = "Hello everyone,\n Reminder that the ***INSERT EVENT NAME*** event is at ***INSERT EVENT TIME***!\n Please try to join.\n Thank you!"
 
 #One Day Before. Events are added by Hour-Minute-Second time (# of seconds after 00:00 on Monday).
 dayBeforeTimes = {
