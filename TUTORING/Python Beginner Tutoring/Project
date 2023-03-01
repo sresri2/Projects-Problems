@@ -1,0 +1,10 @@
+Bank
+
+1) People have accounts - Dictionary
+2) Put money on accounts
+3) Take money out of accounts
+4) Usernames/Passwords - Dictionary, Input for Login, If Condition to Verify username and password
+
+Can also add:
+4) Creating accounts
+5) Deleting accounts
